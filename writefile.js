@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-fs.writeFile('temp/mynewfile3.txt', 'Hello content!', function (err) {
+fs.writeFile('temp/mynewfile3.txt', 'This is my text', function (err) {
   if (err) throw err;
-  console.log('Saved!');
+  console.log('Replaced!');
 });
