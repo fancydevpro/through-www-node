@@ -20,11 +20,12 @@ con.connect(function (err) {
   })
   con.query(`
     CREATE TABLE Persons (
-      PersonID int,
+      PersonID int not null auto_increment,
       LastName varchar(255),
       FirstName varchar(255),
       Address varchar(255),
-      City varchar(255) 
+      City varchar(255),
+      PRIMARY KEY (PersonID)
     );
   `,
   function (err, result) {
